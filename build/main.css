@@ -1,0 +1,14 @@
+body {
+  color: #00ffb3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div {
+  color: #001058;
+}
+
