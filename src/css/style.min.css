@@ -1,21 +1,16 @@
-@font-face {
-  font-family: "Montserrat-Black";
-  src: url(Montserrat-Black.eot), url(Montserrat-Black.woff) format("woff"), url(Montserrat-Black.ttf) format("truetype");
-}
 body {
   color: #00ffb3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  font-family: "Montserrat-Black";
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 div {
   color: #001058;
 }
+
 div .card.searching {
   position: absolute;
   width: 380px;
@@ -30,12 +25,14 @@ div .card.searching {
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 div .card.searching .title {
   position: absolute;
   width: 320px;
   height: 59px;
   left: 30px;
   top: 40px;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -43,12 +40,4 @@ div .card.searching .title {
   /* Dark 100% */
   color: #1F2041;
 }
-div .card.searching .arival {
-  position: absolute;
-  left: 30px;
-  top: 120px;
-}
-div .card.searching .arival label {
-  display: block;
-}
-
+/*# sourceMappingURL=style.min.css.map */

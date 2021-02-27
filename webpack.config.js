@@ -2,6 +2,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const loader = require('sass-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
+// const devMode = process.env.NODE_ENV !== 'production';
 
 const PATHS = {
   source: path.join(__dirname, 'src'),
@@ -27,7 +29,12 @@ module.exports = {
         use: [
           // Creates `style` nodes from JS strings
         //   "style-loader",
-        MiniCssExtractPlugin.loader,
+        {
+          loader: MiniCssExtractPlugin.loader, 
+          options: {
+              publicPath: ''
+          }
+        },
           // Translates CSS into CommonJS
           "css-loader",
           "postcss-loader",
@@ -37,7 +44,16 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader','postcss-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader, 
+            options: {
+                publicPath: ''
+            }
+          },
+         'css-loader',
+         'postcss-loader'
+        ],
       },
       {
         test: /\.pug$/,
@@ -45,12 +61,30 @@ module.exports = {
         options: {
         pretty: true
         }
-        }
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            }
+          }
+        ]
+      }
     ],
   },
   plugins: [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: PATHS.source + '/index.pug'
-      })]
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: `${PATHS.source}/fonts`,
+          to: `${PATHS.build}/fonts` }
+        ],
+      })
+    ]
 };
