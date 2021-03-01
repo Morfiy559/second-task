@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const loader = require('sass-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
+webpack = require('webpack');
 // const devMode = process.env.NODE_ENV !== 'production';
 
 const PATHS = {
@@ -85,6 +86,10 @@ module.exports = {
           { from: `${PATHS.source}/fonts`,
           to: `${PATHS.build}/fonts` }
         ],
+      }),
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
       })
     ]
 };
