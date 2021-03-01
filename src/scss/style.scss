@@ -41,8 +41,33 @@ div{
         position: absolute;
         left: 30px;
         top: 120px;
-        label{
-          display: block;
+        }
+      .departure{
+        position: absolute;
+        top: 120px;
+        right: 30px;
+      }
+      label{
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+      }
+      select{
+        margin: 5px;
+        width: 150px;
+        height: 44px;
+      }
+      .guest{
+        position: absolute;
+        width: 320px;
+        height: 64.56px;
+        left: 30px;
+        top: 205px;
+        select{
+          width: 320px;
+          option{
+            padding-left: 50px;
+          }
         }
       }
     }

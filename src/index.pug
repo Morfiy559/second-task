@@ -11,5 +11,15 @@ html(lang="en")
                 .title Найдём номера под ваши пожелания
                 .arival 
                     label(for="date") прибытие
-                    input(type="date" id="date" name="date")
+                    select(name="arival")
+                        option(selected disabled) ДД.ММ.ГГГГГ
+                .departure
+                    label(for="date") выезд
+                    select(name="depature")
+                        option(selected disabled) ДД.ММ.ГГГГГ
+                .guest 
+                    label(for="date") Гости
+                    select(name="guest")
+                        option(selected disabled) Сколько гостей
+
         script(src="main.js") 

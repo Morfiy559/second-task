@@ -48,7 +48,32 @@ div .card.searching .arival {
   left: 30px;
   top: 120px;
 }
-div .card.searching .arival label {
+div .card.searching .departure {
+  position: absolute;
+  top: 120px;
+  right: 30px;
+}
+div .card.searching label {
   display: block;
+  font-size: 12px;
+  line-height: 15px;
+}
+div .card.searching select {
+  margin: 5px;
+  width: 150px;
+  height: 44px;
+}
+div .card.searching .guest {
+  position: absolute;
+  width: 320px;
+  height: 64.56px;
+  left: 30px;
+  top: 205px;
+}
+div .card.searching .guest select {
+  width: 320px;
+}
+div .card.searching .guest select option {
+  padding-left: 50px;
 }
 
