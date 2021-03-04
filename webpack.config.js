@@ -84,7 +84,7 @@ module.exports = {
       new CopyPlugin({
         patterns: [
           { from: `${PATHS.source}/fonts`,
-          to: `${PATHS.build}/fonts` }
+          to: `${PATHS.build}/fonts` },
         ],
       }),
       new webpack.ProvidePlugin({
