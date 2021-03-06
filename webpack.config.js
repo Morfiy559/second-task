@@ -48,9 +48,9 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader, 
-            options: {
-                publicPath: ''
-            }
+            // options: {
+            //     publicPath: ''
+            // }
           },
          'css-loader',
          'postcss-loader'
@@ -83,8 +83,14 @@ module.exports = {
       }),
       new CopyPlugin({
         patterns: [
-          { from: `${PATHS.source}/fonts`,
-          to: `${PATHS.build}/fonts` },
+          { 
+            from: `${PATHS.source}/fonts`,
+          to: `${PATHS.build}/fonts` 
+        },
+          {
+            from: `${PATHS.source}/svg`,
+          to:`${PATHS.build}/svg`
+          }
         ],
       }),
       new webpack.ProvidePlugin({

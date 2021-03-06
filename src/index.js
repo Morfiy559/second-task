@@ -1,7 +1,8 @@
 // import _ from "lodash";
-
-import "./scss/style.scss";
+// import "normalize";
 import "./css/style.css";
+import "./scss/style.scss";
+
 
 import $ from 'jquery';
  

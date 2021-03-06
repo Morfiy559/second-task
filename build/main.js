@@ -19,17 +19,6 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
-/***/ "./src/scss/style.scss":
-/*!*****************************!*\
-  !*** ./src/scss/style.scss ***!
-  \*****************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://second-task/./src/scss/style.scss?");
-
-/***/ }),
-
 /***/ "./src/css/style.css":
 /*!***************************!*\
   !*** ./src/css/style.css ***!
@@ -41,6 +30,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/scss/style.scss":
+/*!*****************************!*\
+  !*** ./src/scss/style.scss ***!
+  \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://second-task/./src/scss/style.scss?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -48,7 +48,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_jquery_formstyler_min__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/jquery.formstyler.min */ \"./src/js/jquery.formstyler.min.js\");\n/* harmony import */ var _js_jquery_formstyler_min__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_jquery_formstyler_min__WEBPACK_IMPORTED_MODULE_3__);\n// import _ from \"lodash\";\r\n\r\n\r\n\r\n\r\n\r\n \r\n__webpack_require__.g.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_2___default());\r\n__webpack_require__.g.$ = (jquery__WEBPACK_IMPORTED_MODULE_2___default());\r\n\r\n\r\n    jquery__WEBPACK_IMPORTED_MODULE_2___default()(function(){\r\n\r\n        // jQuery methods go here...\r\n      jquery__WEBPACK_IMPORTED_MODULE_2___default()('select').styler();\r\n      });\n\n//# sourceURL=webpack://second-task/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_jquery_formstyler_min__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/jquery.formstyler.min */ \"./src/js/jquery.formstyler.min.js\");\n/* harmony import */ var _js_jquery_formstyler_min__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_jquery_formstyler_min__WEBPACK_IMPORTED_MODULE_3__);\n// import _ from \"lodash\";\r\n// import \"normalize\";\r\n\r\n\r\n\r\n\r\n\r\n \r\n__webpack_require__.g.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_2___default());\r\n__webpack_require__.g.$ = (jquery__WEBPACK_IMPORTED_MODULE_2___default());\r\n\r\n\r\n    jquery__WEBPACK_IMPORTED_MODULE_2___default()(function(){\r\n\r\n        // jQuery methods go here...\r\n      jquery__WEBPACK_IMPORTED_MODULE_2___default()('select').styler();\r\n      });\n\n//# sourceURL=webpack://second-task/./src/index.js?");
 
 /***/ }),
 

@@ -1,14 +1,11 @@
-$body-color: rgb(0, 255, 179);
 @import "fonts";
 
 body {
-  color: $body-color;
-  display: flex;
-  transition: all .5s;
-  font-family: "Montserrat-Black";
+  font-family: "Montserrat";
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.75);
 }
-div{
-  color: rgb(0, 16, 88);
+.cards{
     .card.searching{
       position: absolute;
       width: 380px;
@@ -38,6 +35,36 @@ div{
 
         color: #1F2041;
       }
+      .jq-selectbox__select{
+        padding-left: 15px;
+        background: #FFFFFF;
+        /* Dark 25% */
+        border: 1px solid rgba(31, 32, 65, 0.25);
+
+        .jq-selectbox__select-text{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        color: rgba(31, 32, 65, 0.75);
+        }
+      }
+      
+      .jq-selectbox__trigger{
+        border-left: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .jq-selectbox__trigger-arrow{
+          position: relative;
+          border:none;
+          top: 0;
+          left: 0;
+          width: 14px;
+          height: 14px;
+          background-color: rgba(31, 32, 65, 0.5) ;
+          mask-image: url('/build/svg/expand_more-24px.svg');
+          mask-position: center;
+        }
+      }
       .arrival{
         position: absolute;
         left: 30px;
@@ -52,24 +79,32 @@ div{
         display: block;
         font-size: 12px;
         line-height: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #1F2041;
       }
-      select{
-        margin: 5px;
-        width: 150px;
-        height: 44px;
-      }
+      
       .guest{
         position: absolute;
         width: 320px;
         height: 64.56px;
         left: 30px;
         top: 205px;
-        select{
-          width: 320px;
-          option{
-            padding-left: 50px;
-          }
+        .jq-selectbox.jqselect{
+          width: 100%;
         }
+      }
+      button{
+        position: relative;
+        width: 320px;
+        height: 44px;
+        left: 170px;
+        top: 450px;
+
+        /* Primary Gradient */
+
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
       }
     }
 }
