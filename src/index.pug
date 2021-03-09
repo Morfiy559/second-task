@@ -10,16 +10,19 @@ html(lang="en")
         .cards
             .card.searching 
                 .title Найдём номера под ваши пожелания
-                .arrival 
-                    label(for="date") Прибытие
-                    select(name="arrival")
-                        option(selected disabled) ДД.ММ.ГГГГГ
-                .departure
-                    label(for="date") Выезд
-                    select(name="depature")
-                        option(selected disabled) ДД.ММ.ГГГГГ
-                .guest 
-                    label(for="date") Гости
-                    select(name="guest")
-                        option(selected disabled) Сколько гостей 
-                button Подобрать отель`
+                form(action="", method="post") 
+                    .arrival 
+                        label(for="date") Прибытие
+                        select(name="arrival")
+                            option(selected disabled) ДД.ММ.ГГГГГ
+                    .departure
+                        label(for="date") Выезд
+                        select(name="depature")
+                            option(selected disabled) ДД.ММ.ГГГГГ
+                    .guest 
+                        label(for="date") Гости
+                        select(name="guest")
+                            option(selected disabled) Сколько гостей 
+                    button(type="submit") Подобрать отель
+            .card.register 
+                .title Регистрация аккаунта

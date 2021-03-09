@@ -128,8 +128,8 @@ body {
           content: "";
           display: block;
           position: absolute;
-          min-width: 14px;
-          min-height: 14px;
+          width: 14px;
+          height: 14px;
           mask-image: url('/build/svg/arrow_forward.svg');
           mask-size: contain;
           background-color: white;
@@ -139,5 +139,11 @@ body {
         }
       }
     }
+  .card.register{
+    width: 380px;
+    height: 646px;
+    top: 564px;
+    left: 140px;
+  }
 }
 

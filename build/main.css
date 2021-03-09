@@ -1072,8 +1072,8 @@ body {
   content: "";
   display: block;
   position: absolute;
-  min-width: 14px;
-  min-height: 14px;
+  width: 14px;
+  height: 14px;
   -webkit-mask-image: url(arrow_forward.svg);
           mask-image: url(arrow_forward.svg);
   -webkit-mask-size: contain;
@@ -1081,4 +1081,10 @@ body {
   background-color: white;
   left: 276px;
   top: 15px;
+}
+.cards .card.register {
+  width: 380px;
+  height: 646px;
+  top: 564px;
+  left: 140px;
 }
