@@ -35,8 +35,16 @@ body {
 
         color: #1F2041;
       }
+      .jq-selectbox.jqselect{
+        width: 150px;
+        height: 44px;
+      }
       .jq-selectbox__select{
+        display: flex;
+        align-items: center;
+        height: 100%;
         padding-left: 15px;
+        padding-right: 33px;
         background: #FFFFFF;
         /* Dark 25% */
         border: 1px solid rgba(31, 32, 65, 0.25);
@@ -95,16 +103,40 @@ body {
         }
       }
       button{
-        position: relative;
+        position:absolute;
         width: 320px;
         height: 44px;
-        left: 170px;
-        top: 450px;
+        left: 30px;
+        top: 300px;
 
         /* Primary Gradient */
 
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         border-radius: 22px;
+        border: none;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        &:after{
+          content: "";
+          display: block;
+          position: absolute;
+          min-width: 14px;
+          min-height: 14px;
+          mask-image: url('/build/svg/arrow_forward.svg');
+          mask-size: contain;
+          background-color: white;
+          left: 276px;
+          top: 15px;
+
+        }
       }
     }
 }

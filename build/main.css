@@ -971,8 +971,20 @@ body {
   /* Dark 100% */
   color: #1F2041;
 }
+.cards .card.searching .jq-selectbox.jqselect {
+  width: 150px;
+  height: 44px;
+}
 .cards .card.searching .jq-selectbox__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   padding-left: 15px;
+  padding-right: 33px;
   background: #FFFFFF;
   /* Dark 25% */
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1036,14 +1048,37 @@ body {
   width: 100%;
 }
 .cards .card.searching button {
-  position: relative;
+  position: absolute;
   width: 320px;
   height: 44px;
-  left: 170px;
-  top: 450px;
+  left: 30px;
+  top: 300px;
   /* Primary Gradient */
   background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
   background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
+  border: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.cards .card.searching button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: 14px;
+  min-height: 14px;
+  -webkit-mask-image: url(arrow_forward.svg);
+          mask-image: url(arrow_forward.svg);
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: white;
+  left: 276px;
+  top: 15px;
 }
