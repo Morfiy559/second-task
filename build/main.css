@@ -1083,8 +1083,160 @@ body {
   top: 15px;
 }
 .cards .card.register {
+  position: absolute;
   width: 380px;
   height: 646px;
-  top: 564px;
   left: 140px;
+  top: 564px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.cards .card.register .title {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  /* Dark 100% */
+  color: #1F2041;
+}
+.cards .card.register input[type=checkbox] {
+  height: 40px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+.cards .card.register * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cards .card.register *:before, .cards .card.register *:after {
+  content: "";
+  position: absolute;
+}
+.cards .card.register .toggle-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% / 3);
+          flex: 1 1 calc(100% / 3);
+  height: 20px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 960px) {
+  .cards .card.register .toggle-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(100% / 2);
+            flex: 1 1 calc(100% / 2);
+  }
+}
+@media (max-width: 700px) {
+  .cards .card.register .toggle-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+.cards .card.register .toggle {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 40px;
+}
+.cards .card.register label.toggle-item {
+  width: 40px;
+  background: #1064ff;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform-origin: 20% center;
+      -ms-transform-origin: 20% center;
+          transform-origin: 20% center;
+  cursor: pointer;
+}
+.cards .card.register label.toggle-item:before {
+  display: block;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background: rgba(31, 32, 65, 0.25);
+  top: 0.25em;
+  left: 0.25em;
+  border-radius: 2em;
+  border: 2px solid #09db1e;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.cards .card.register .transparent label {
+  background: transparent;
+  border: 3px solid rgba(31, 32, 65, 0.25);
+}
+.cards .card.register .transparent label:before {
+  background: rgba(31, 32, 65, 0.25);
+  border: 5px solid rgba(31, 32, 65, 0.25);
+  top: 0.1em;
+  left: 0.1em;
+  background: #fff;
+}
+.cards .card.register #transparent:checked + label:before {
+  -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+          transform: translateX(20px);
+}
+.cards .card.register button {
+  width: 320px;
+  height: 44px;
+  left: 30px;
+  top: 300px;
+  /* Primary Gradient */
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.cards .card.register button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  -webkit-mask-image: url(arrow_forward.svg);
+          mask-image: url(arrow_forward.svg);
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: white;
+  left: 276px;
+  top: 15px;
 }

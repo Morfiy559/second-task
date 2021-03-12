@@ -26,3 +26,18 @@ html(lang="en")
                     button(type="submit") Подобрать отель
             .card.register 
                 .title Регистрация аккаунта
+                form(action="", method="post")
+                    input(class="reginput",value="Имя", type="text", name="name") 
+                    input(class="reginput",value="Фамилия" type="text", name="surname")
+                    input(type="radio", name="sex",value='Мужчина')
+                    input(type="radio", name="sex",value='Женщина') 
+                    label(for="")
+                    input(class="reginput",value="ДД.ММ.ГГГГ",type="date")
+                    label(for="")
+                    input(class="reginput",type="email", name="") 
+                    input(class="reginput",type="password", name="")
+                    .toggle-wrapper
+                        .toggle.transparent
+                            input#transparent(type="checkbox")
+                            label.toggle-item(for="transparent")
+                    button(type="submit") Перейти к оплате
