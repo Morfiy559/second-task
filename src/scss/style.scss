@@ -195,8 +195,20 @@ body {
       @media (max-width: 700px) {
         flex: 1 1 100%;
       }
+      *{  
+        
+        left: 0;
+          &:nth-child(1){
+          top: 0;
+          padding-left: 0;
+        }
+          &:nth-child(2){
+          top: 0;
+        }
+      }
     }
     .toggle {
+      top: 0px;
       position: relative;
       display: inline-block;
       height:20px;
@@ -204,6 +216,7 @@ body {
     }
     
     label.toggle-item {
+      top: 0;
       width: 40px;
       background: #1064ff;
       height: 20px;
@@ -226,9 +239,10 @@ body {
       }
     }
     .transparent {
+      top: 0;
       label {
         background: transparent;
-        
+        top: 0px;
         border: 3px solid rgba(31, 32, 65, 0.25);
         &:before {
           background: rgba(31, 32, 65, 0.25);
@@ -278,8 +292,103 @@ body {
           background-color: white;
           left: 276px;
           top: 15px;
+      }
     }
-  }
+    .reginput{
+      position: absolute;
+      left :30px;
+      width: 320px;
+      height: 44px;
+      background: #FFFFFF;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 4px;
+      
+    }
+    form * {
+      position:absolute ;
+      left: 30px;
+      
+      &:nth-child(1){
+        top: 90px;
+        padding-left: 15px;
+      }
+      &:nth-child(2){
+        top: 144px;
+        padding-left: 15px;
+      }
+      &:nth-child(3),&:nth-child(4),&:nth-child(5),&:nth-child(6){
+        top: 200px;
+        left: 30px;
+        padding-left: 0;
+      }
+      &:nth-child(4){
+        left: 60px;
+      }
+      &:nth-child(5){
+        left: 148px;
+      }
+      &:nth-child(6){
+        left: 178px;
+      }
+      &:nth-child(7){
+        top: 242px;
+        color: #1F2041;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+      }
+      &:nth-child(8){
+        top: 262px;
+        padding-left: 15px;
+      }
+      &:nth-child(9){
+        top: 326px;
+        color: #1F2041;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+      }
+      &:nth-child(10){
+        top: 346px;
+        padding-left: 15px;
+      }
+      &:nth-child(11){
+        top: 400px;
+        padding-left: 15px;
+      }
+      &:nth-child(12),&:nth-child(13){
+        top: 454px;
+      }
+      &:nth-child(13){
+        left: 80px;
+      }
+      &:nth-child(14){
+        top: 498px;
+      }
+      &:nth-child(15){
+        top: 584px;
+        color: #1F2041;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+      }
+      &:nth-child(16){
+        top: 572px;
+        left: 251px;
+        width: 99px;
+        height: 44px;
+      }
+    }
+
   }
 }
 

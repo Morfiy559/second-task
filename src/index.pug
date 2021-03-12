@@ -27,17 +27,22 @@ html(lang="en")
             .card.register 
                 .title Регистрация аккаунта
                 form(action="", method="post")
-                    input(class="reginput",value="Имя", type="text", name="name") 
-                    input(class="reginput",value="Фамилия" type="text", name="surname")
-                    input(type="radio", name="sex",value='Мужчина')
-                    input(type="radio", name="sex",value='Женщина') 
-                    label(for="")
-                    input(class="reginput",value="ДД.ММ.ГГГГ",type="date")
-                    label(for="")
-                    input(class="reginput",type="email", name="") 
-                    input(class="reginput",type="password", name="")
+                    input(class="reginput",placeholder="Имя", type="text", name="name") 
+                    input(class="reginput",placeholder="Фамилия" type="text", name="surname")
+                    input(type="radio", name="sex",placeholder='Мужчина')
+                    label(for="man") Мужчина
+                    input(type="radio", name="sex",placeholder='Женщина') 
+                    label(for="woman") Женщина 
+                    label(for="") Дата рождения
+                    input(id="elem" class="reginput",placeholder="ДД.ММ.ГГГГ",type="date")
+                    label(for="") Данные для входа
+                    input(class="reginput",type="email", name="",placeholder="Email") 
+                    input(class="reginput",type="password", name="",placeholder="Пароль")
                     .toggle-wrapper
                         .toggle.transparent
                             input#transparent(type="checkbox")
                             label.toggle-item(for="transparent")
+                    label(for="") Получать спецпредложения 
                     button(type="submit") Перейти к оплате
+                    .question Уже есть аккаунт на Toxin
+                    button войти 

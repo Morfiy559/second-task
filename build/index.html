@@ -35,22 +35,27 @@
       <div class="card register"> 
         <div class="title">Регистрация аккаунта</div>
         <form action="" method="post">
-          <input class="reginput" value="Имя" type="text" name="name">
-          <input class="reginput" value="Фамилия" type="text" name="surname">
-          <input type="radio" name="sex" value="Мужчина">
-          <input type="radio" name="sex" value="Женщина">
-          <label for=""></label>
-          <input class="reginput" value="ДД.ММ.ГГГГ" type="date">
-          <label for=""></label>
-          <input class="reginput" type="email" name="">
-          <input class="reginput" type="password" name="">
+          <input class="reginput" placeholder="Имя" type="text" name="name">
+          <input class="reginput" placeholder="Фамилия" type="text" name="surname">
+          <input type="radio" name="sex" placeholder="Мужчина">
+          <label for="man">Мужчина</label>
+          <input type="radio" name="sex" placeholder="Женщина">
+          <label for="woman">Женщина </label>
+          <label for="">Дата рождения</label>
+          <input class="reginput" id="elem" placeholder="ДД.ММ.ГГГГ" type="date">
+          <label for="">Данные для входа</label>
+          <input class="reginput" type="email" name="" placeholder="Email">
+          <input class="reginput" type="password" name="" placeholder="Пароль">
           <div class="toggle-wrapper">
             <div class="toggle transparent">
               <input id="transparent" type="checkbox">
               <label class="toggle-item" for="transparent"></label>
             </div>
           </div>
+          <label for="">Получать спецпредложения </label>
           <button type="submit">Перейти к оплате</button>
+          <div class="question">Уже есть аккаунт на Toxin</div>
+          <button>войти </button>
         </form>
       </div>
     </div>
