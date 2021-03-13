@@ -1346,3 +1346,214 @@ body {
   color: #BC9CFF;
   border: 2px #BC9CFF solid;
 }
+.cards .card.booking {
+  position: absolute;
+  width: 380px;
+  height: 511px;
+  left: 560px;
+  top: 151px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.cards .card.booking .title {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+.cards .card.booking .title #sign {
+  font-size: 14px;
+}
+.cards .card.booking .title span {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 17px;
+  color: black;
+}
+.cards .card.booking .cost {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.cards .card.booking .cost span {
+  font-size: 14px;
+}
+.cards .card.booking form {
+  position: relative;
+  top: 90px;
+}
+.cards .card.booking form .jq-selectbox.jqselect {
+  width: 150px;
+  height: 44px;
+}
+.cards .card.booking form .jq-selectbox__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 33px;
+  background: #FFFFFF;
+  /* Dark 25% */
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.cards .card.booking form .jq-selectbox__select .jq-selectbox__select-text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.75);
+}
+.cards .card.booking form .jq-selectbox__trigger {
+  border-left: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cards .card.booking form .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+  position: relative;
+  border: none;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: rgba(31, 32, 65, 0.5);
+  -webkit-mask-image: url(expand_more-24px.svg);
+          mask-image: url(expand_more-24px.svg);
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+.cards .card.booking form .arrival {
+  position: absolute;
+  left: 30px;
+}
+.cards .card.booking form .departure {
+  position: absolute;
+  right: 30px;
+}
+.cards .card.booking form label {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1F2041;
+}
+.cards .card.booking form .guest {
+  position: absolute;
+  width: 320px;
+  height: 64.56px;
+  left: 30px;
+  top: 85px;
+}
+.cards .card.booking form .guest .jq-selectbox.jqselect {
+  width: 100%;
+}
+.cards .card.booking form button {
+  position: absolute;
+  width: 320px;
+  height: 44px;
+  left: 30px;
+  top: 330px;
+  /* Primary Gradient */
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  border: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.cards .card.booking form button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  -webkit-mask-image: url(arrow_forward.svg);
+          mask-image: url(arrow_forward.svg);
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: white;
+  left: 276px;
+  top: 15px;
+}
+.cards .card.booking .info {
+  position: absolute;
+  width: 320px;
+  height: 36px;
+  left: 31px;
+  top: 259px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.cards .card.booking .info * {
+  position: absolute;
+}
+.cards .card.booking .info *:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.cards .card.booking .info *:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+.cards .card.booking .info *:nth-child(3) {
+  top: 30px;
+}
+.cards .card.booking .info *:nth-child(4) {
+  top: 30px;
+  right: 0;
+}
+.cards .card.booking .info *:nth-child(5) {
+  top: 60px;
+}
+.cards .card.booking .info *:nth-child(6) {
+  top: 60px;
+  right: 0;
+}
+.cards .card.booking .info *:nth-child(7), .cards .card.booking .info *:nth-child(8) {
+  top: 110px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+.cards .card.booking .info *:nth-child(8) {
+  right: 0;
+}
+.cards .card.booking .info *:nth-child(9) {
+  width: 182px;
+  height: 1px;
+  left: 60px;
+  top: 127px;
+  border: 1px dotted rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
