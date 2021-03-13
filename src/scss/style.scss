@@ -374,18 +374,17 @@ body {
       }
       &:nth-child(15){
         top: 584px;
-        color: #1F2041;
-        font-size: 12px;
-        line-height: 15px;
-        /* identical to box height */
-
-        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 18px;
       }
       &:nth-child(16){
         top: 572px;
         left: 251px;
         width: 99px;
         height: 44px;
+        background: rgba(0, 0, 0, 0);
+        color: #BC9CFF;
+        border: 2px #BC9CFF solid;
       }
     }
 
